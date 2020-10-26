@@ -36,7 +36,7 @@ exports.getItem = async (req, res) => {
       }
     });
   } catch (err) {
-    res.status(200).json({
+    res.status(404).json({
       status: 'failed'
     });
   }
